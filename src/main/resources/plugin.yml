@@ -1,0 +1,4 @@
+name: TheAgesProgression
+version: '${project.version}'
+main: me.thetruebeep.theagesprogression.TheAgesProgression
+api-version: '1.13'
