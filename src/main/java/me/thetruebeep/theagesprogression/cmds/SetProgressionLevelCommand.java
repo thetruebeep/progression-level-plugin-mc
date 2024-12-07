@@ -1,6 +1,6 @@
 package me.thetruebeep.theagesprogression.cmds;
 
-import me.thetruebeep.theagesprogression.ProgressionSettings;
+import me.thetruebeep.theagesprogression.api.ProgressionSettings;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

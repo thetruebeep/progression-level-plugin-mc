@@ -1,5 +1,6 @@
 package me.thetruebeep.theagesprogression;
 
+import me.thetruebeep.theagesprogression.api.ProgressionSettings;
 import me.thetruebeep.theagesprogression.cmds.SetProgressionLevelCommand;
 import me.thetruebeep.theagesprogression.listeners.InventoryTransferListener;
 import me.thetruebeep.theagesprogression.listeners.PickUpItemsListener;

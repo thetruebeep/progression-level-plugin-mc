@@ -1,6 +1,6 @@
 package me.thetruebeep.theagesprogression.listeners;
 
-import me.thetruebeep.theagesprogression.ProgressionSettings;
+import me.thetruebeep.theagesprogression.api.ProgressionSettings;
 import me.thetruebeep.theagesprogression.TheAgesProgression;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
