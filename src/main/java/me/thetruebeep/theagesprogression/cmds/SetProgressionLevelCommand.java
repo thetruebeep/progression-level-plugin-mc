@@ -1,6 +1,8 @@
 package me.thetruebeep.theagesprogression.cmds;
 
 import me.thetruebeep.theagesprogression.api.ProgressionSettings;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -18,34 +20,34 @@ public class SetProgressionLevelCommand implements CommandExecutor, TabExecutor 
             return false;
         }
         if(args.length < 1){
-            sender.sendMessage("Please specify the progression stage");
+            sender.sendMessage(Component.text("Please specify the progression stage").color(NamedTextColor.RED));
             return false;
         }
-        if(args.length == 1 && args[0].equalsIgnoreCase("wood")){
+        if(args[0].equalsIgnoreCase("wood")){
             sender.sendMessage("Setting the worlds progression stage to wood");
             ProgressionSettings.getInstance().setProgressionLevel("Wood");
             return true;
-        } else if (args.length == 1 && args[0].equalsIgnoreCase("stone")) {
+        } else if (args[0].equalsIgnoreCase("stone")) {
             sender.sendMessage("Setting the worlds progression stage to stone");
             ProgressionSettings.getInstance().setProgressionLevel("Stone");
             return true;
-        }else if (args.length == 1 && args[0].equalsIgnoreCase("iron")){
+        }else if (args[0].equalsIgnoreCase("iron")){
             sender.sendMessage("Setting the worlds progression stage to iron");
             ProgressionSettings.getInstance().setProgressionLevel("Iron");
             return true;
 
-        } else if (args.length == 1 && args[0].equalsIgnoreCase("diamond")){
+        } else if (args[0].equalsIgnoreCase("diamond")){
             sender.sendMessage("Setting the worlds progression stage to diamond");
             ProgressionSettings.getInstance().setProgressionLevel("Diamond");
             return true;
 
-        } else if (args.length == 1 && args[0].equalsIgnoreCase("netherite")) {
-            sender.sendMessage("Setting the worlds progression stage to netherite");
+        } else if (args[0].equalsIgnoreCase("netherite")) {
+            sender.sendMessage(Component.text("Setting the worlds progression stage to netherite"));
             ProgressionSettings.getInstance().setProgressionLevel("Netherite");
             return true;
 
         } else{
-            sender.sendMessage("You have not specified a progression level");
+            sender.sendMessage(Component.text("You have not specified a progression level").color(NamedTextColor.RED));
             return false;
         }
     }
