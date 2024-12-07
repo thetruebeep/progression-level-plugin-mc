@@ -2,3 +2,10 @@ name: TheAgesProgression
 version: '${project.version}'
 main: me.thetruebeep.theagesprogression.TheAgesProgression
 api-version: '1.13'
+commands:
+  progression_level:
+    description: "Change the Progression Level of the game"
+    usage: "/progression_level [wood/stone/diamond/netherite]"
+    aliases: []
+    permission: theagesprogression.command.progression_level
+    permission-message: "You cannot change the progression stage of the server"
